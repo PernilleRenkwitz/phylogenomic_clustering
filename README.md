@@ -39,9 +39,7 @@ This files is then read
 
 
 ## Clean data
-The raw dastq files have been cleaned using fastp, since it performs preprocessing and quality control and is designed for (insert data type description). This type of data has some known issues which needs to be adressed using specific settings. 
-
-####
+The raw dastq files have been cleaned using fastp, since it performs pre-processing and quality control and is designed for (insert data type description). This type of data has some known issues which needs to be adressed using specific settings. 
 
 like polyG tails, which stem from the 2-channel chemistry (insert source), and 
 - Removing adapters
@@ -50,13 +48,14 @@ like polyG tails, which stem from the 2-channel chemistry (insert source), and
 - correcting mismatching bases
 
 ### fastp 
+fastp functions does pre-processing and quality control one-in-all and includes a lot of functions automatically for RE short read Illumina NextSeq data but some settings need to be specified. I'll shortly go over the default settings first and then explain the specific parameters used to cover specifics for the commonly seen known issues for this data type. 
 
-Options selected: 
-
-Default parameters not specifed: 
+#### Default parameters
 - Length filtering
-- 
+- Sliding window size 
+- Q scores needed
 
+#### Issue #X
 - detect_adapter_for_pe
 fastp performs adapter trimming automaticly for single end (SE) data and not for PE data, so this was enabled with `--detect_adapter_for_pe_` to ensure most adapters are removed. 
 
