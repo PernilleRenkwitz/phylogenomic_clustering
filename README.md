@@ -2,26 +2,23 @@
 Phylogenomic SNP clustering analysis
 
 ## Purpose
-Analyse phylogenic tree clusters for listeria isolates from denmark which includes available metadata. It is done using bioinformatic pipelines to process raw fastq sequences and perform variant calling on them to find variants and cluster them accoring to SNP differences in a phylogenetic tree, where metadata relating to the origin of the isolate and type of sampling is used to see if anything can be infered. 
+Analyse phylogenic tree clusters for _Listeria monocytogenes_ (listeria) isolates from denmark which includes available metadata. It is done using bioinformatic pipelines to process raw fastq sequences and perform variant calling on them to find variants and cluster them accoring to SNP differences in a phylogenetic tree, where metadata relating to the origin of the isolate and type of sampling is used to see if anything can be infered. 
 One area of interrest is clinical vs. non-clinical isolates with respect to possible pathogenicity, comparison of origins: unknown origin or other and overall clustering patterns. 
 
 
 ## Data
+The data consists of danish listeria isolates from whole genome sequencing (WGS) sequenced by Illumina NextSeq., which produces raw FASTQ files with paired end (PE)Ilumina short reads. 
 
+It is a subsample of the data used in project: PRJEB56155 (https://www.ebi.ac.uk/ena/browser/view/PRJEB56155) belonging to DTU, which originally included data from multiple countries. 
+It is available from the European Nucleotide Archive (ENA), where it can be downloaded using fastp_ftp downloadlinks. 
 
-It is L. monocytogenes isolates as paired end (PE) short reads extracted by whole genome sequencing (WGS) using Illumina. The PE short reads where sequenced on NextSeq 500. 
+- something about the metadata spreadsheet and how we selected the acc.
+    - skip how to get the metadata for now
 
-- Nextera XT Library Prep Kit has been used for sequencing libraries
-- NextSeq 500 
-
-- From ENA SRA database
-- listeria ioslates from denmark
-- PE reads
-- metadata (create table to contain type of data)
-- collected by? (look into)
-
+The metadata was then filtered for samples taken in Denmark, which resulted in 104 isolates that subsecuencly was downloaded from ENA. 
 
 ## Download data
+
 - steps
 - where from 
 - how to get acc
