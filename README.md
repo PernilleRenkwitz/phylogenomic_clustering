@@ -63,3 +63,9 @@ fastp performs adapter trimming automaticly for single end (SE) data and not for
 - for isolates
 - PE 
 
+
+## MLST
+- might be good because of error in spread sheet 
+- clonal complexes (CC)
+
+
