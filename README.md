@@ -23,7 +23,7 @@ The metadata was then filtered for samples taken in Denmark, which resulted in 1
 The bioinformatic pipeline was performed was done on DTU's HPC clusters using batch scripts running through all isolates. 
 
 ## Download data
-The download process runs over all requested accession numbers (ACCs), which can be found in (insert link) and downloads the data using 3 overall steps:
+The download process runs over all requested accession numbers (ACCs), which can be found in acc.txt (https://github.com/PernilleRenkwitz/phylogenomic_clustering/blob/main/data/acc.txt) and downloads the data using 3 overall steps:
 1. Read (link to acc.txt) to get acc
 2. get ENA fastq_ftp and run acc (CHECK THIS TEXT AGAIN LATER)
 3. Download data using fastq_ftp and save PE FASTQ files with run acc (used before?) as name
