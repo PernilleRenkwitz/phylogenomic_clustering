@@ -7,16 +7,25 @@ Analyse phylogenic tree clusters for _Listeria monocytogenes_ (listeria) isolate
 One area of interrest is clinical vs. non-clinical isolates with respect to possible pathogenicity, comparison of origins: unknown origin or other and overall clustering patterns. 
 
 
-## Data
-The data consists of danish listeria isolates from whole genome sequencing (WGS) sequenced by Illumina NextSeq., which produces raw FASTQ files with paired end (PE)Ilumina short reads. 
+## Material 
+The material consists of danish listeria isolates from whole genome sequencing (WGS) sequenced by Illumina NextSeq., which produces raw FASTQ files with paired end (PE)Ilumina short reads. 
 
-It is a subsample of the data used in project: PRJEB56155 (https://www.ebi.ac.uk/ena/browser/view/PRJEB56155) belonging to DTU, which originally included data from multiple countries. 
-It is available from the European Nucleotide Archive (ENA), where it can be downloaded using fastp_ftp downloadlinks. 
+It is a subsample of the data used in project: PRJEB56155 (https://www.ebi.ac.uk/ena/browser/view/PRJEB56155), which originally included data from multiple countries but has now been limited to Denmark. 
+It is available from the European Nucleotide Archive (ENA), where it can be downloaded using fastp_ftp downloadlinks (insert reference to script). 
 
 #### Metadata 
 - something about the metadata spreadsheet and how we selected the acc.
     - skip how to get the metadata for now
 
+Isolates 
+metadata 
+(WGS_id)
+(Isolate_ID)
+Accession_number (ERS or ERR, with some including SAMEA (metadata))
+Isolation_year
+Country_of_collection 
+Isolation_source (Seperated into: food, unknown, production environment, human)
+Source_description (extra details which go into more details about the specific source.)
 The metadata was then filtered for samples taken in Denmark, which resulted in 104 isolates that subsecuencly was downloaded from ENA. 
 
 #### Analysis where details
