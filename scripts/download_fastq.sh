@@ -38,7 +38,7 @@ while read -r line; do
         | awk -F '\t' 'NR > 1 && $2 != "" {print $1"\n"$2}' \
     )"
 
-    #get run_acc
+    #seperate run_acc and fastq
     run_acc=$(echo "$ena_ftp" | sed -n '1p')
     fastq_ftp=$(echo "$ena_ftp" | sed -n '2p' | tr ';' '\n')
 
