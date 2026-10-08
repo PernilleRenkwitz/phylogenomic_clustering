@@ -24,7 +24,16 @@ for r1 in "$DATA_DIR"/*_trim_1.fastq.gz; do
     run_acc="${file%_trim_1.fastq.gz}"
     r2="${DATA_DIR}/${run_acc}_trim_2.fastq.gz"
 
-    #SPAdes
+    #output dir
+    assemble_out="${OUT_DIR}/${run_acc}"
+
+    #skip complete assemblies
+    if [ -f "${assemble_out}/contigs.fasta" ]; then
+        echo "$run_acc alredy assembled. Skipping."
+        continue
+    fi
+
+    #SPAdes 
     spades.py \
         -1 "$r1" \
         -2 "$r2" \
