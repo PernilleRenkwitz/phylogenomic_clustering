@@ -5,7 +5,7 @@ Phylogenomic SNP clustering analysis
 Analyse phylogenic tree clusters for _Listeria monocytogenes_ (listeria) isolates from denmark which includes available metadata. It is done using bioinformatic pipelines to process raw fastq sequences and perform variant calling on them to find variants and cluster them accoring to SNP differences in a phylogenetic tree. From here, metadata relating to the origin of the isolate is added and (type) of sampling is used to see if anything can be infered. 
 
 One area of interrest is clinical vs. non-clinical isolates with respect to possible pathogenicity, comparison of origins: unknown origin or other and overall clustering patterns. 
-
+#### UPDATE LATER!
 
 ## Material 
 The material consists of danish listeria isolates from whole genome sequencing (WGS) sequenced by Illumina NextSeq., which produces raw FASTQ files with paired end (PE)Ilumina short reads. 
@@ -77,4 +77,9 @@ fastp performs adapter trimming automaticly for single end (SE) data and not for
 - might be good because of error in spread sheet 
 - clonal complexes (CC)
 
+
+## SNP 
+
+
+## Phylogenetic tree
 
