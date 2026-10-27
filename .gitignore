@@ -1,5 +1,6 @@
 # Editor Config
 .vscode
 data/*
+.docx
 
 
