@@ -1,5 +1,5 @@
 # Editor Config
 .vscode
-./data
+data/*
 
 
